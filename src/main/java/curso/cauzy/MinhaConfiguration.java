@@ -6,8 +6,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MinhaConfiguration {
 
-    @Bean(name = "applicationName")  //crie esse objeto no contexto da aplicação, coneção com banco de dados
-    public String applicationName(){
-        return "Sistema de Vendas";
-    }
+    // foi substituido pelo application.properties
+//    @Bean(name = "applicationName")  //crie esse objeto no contexto da aplicação, coneção com banco de dados
+//    public String applicationName(){
+//        return "Sistema de Vendas";
+//    }
 }
