@@ -9,13 +9,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
-    <parent>
+    <parent>  <!-- A aplicação passar a ser Spring Boot -->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.5</version>
@@ -23,21 +23,41 @@
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
-        <dependency>
+        <!-- Starter basico -->
+        <dependency> <!-- funcinalidades basicas do spring -->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>3.2.5</version>
+            <version>3.0.0</version> <!-- a versao é herdada do parent -->
         </dependency>
 
+        <!-- Starter Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Starter jpa -->
+        <dependency> <!-- funcinalidades basicas do spring -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- Starter security -->
+        <dependency> <!-- funcinalidades basicas do spring -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- Starter test -->
+        <dependency> <!-- funcinalidades basicas do spring -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
+            <plugin> <!-- Connecta o mavem ao spring, conecta o Maven ao Spring Boot, permitindo que você execute tarefas específicas relacionadas ao Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
