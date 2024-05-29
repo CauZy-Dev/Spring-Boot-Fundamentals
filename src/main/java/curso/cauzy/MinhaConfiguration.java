@@ -5,8 +5,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Configuration
-@Profile("development") // so roda nesse ambiente;/ perfil
+//@Configuration
+//@Profile("development") // so roda nesse ambiente;/ perfil
+@Development // annotation personalizada,essa classe vai herdar todas as annotation a annotation DEveloper(Profile e configuration)
 public class MinhaConfiguration {
 
     @Bean

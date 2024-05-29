@@ -3,8 +3,10 @@ package curso.cauzy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,19 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication // spring-boot-starter scanney todas as annotation dentro do pacote curso.cauzy
 @RestController // Controlador REST : spring-boot-starter-web
 public class SalesApplication {
+
+//    @Autowired
+//    @Qualifier("gato")
+//    ou
+    @Gato
+    private Animal animal;
+
+    @Bean(name = "executarAnimal")
+    public CommandLineRunner executar(){
+        return args -> {
+          this.animal.fazerBarulho();
+        };
+    }
 
 //    @Autowired //chama o factory, instancia a classe : spring-boot-starter
 //    @Qualifier("applicationName")
