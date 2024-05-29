@@ -1,0 +1,13 @@
+package curso.cauzy;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MinhaConfiguration {
+
+    @Bean(name = "applicationName")  //crie esse objeto no contexto da aplicação, coneção com banco de dados
+    public String applicationName(){
+        return "Sistema de Vendas";
+    }
+}

@@ -18,7 +18,7 @@
     <parent>  <!-- A aplicação passar a ser Spring Boot -->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
+        <version>3.2.0</version>
     </parent>
 
     <dependencies>
@@ -27,7 +27,7 @@
         <dependency> <!-- funcinalidades basicas do spring -->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>3.0.0</version> <!-- a versao é herdada do parent -->
+            <!-- a versao é herdada do parent -->
         </dependency>
 
         <!-- Starter Web -->
@@ -36,25 +36,24 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Starter jpa -->
-        <dependency> <!-- funcinalidades basicas do spring -->
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+<!--        &lt;!&ndash; Starter jpa &ndash;&gt;-->
+<!--        <dependency> &lt;!&ndash; funcinalidades basicas do spring &ndash;&gt;-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
+<!--        </dependency>-->
 
-        <!-- Starter security -->
-        <dependency> <!-- funcinalidades basicas do spring -->
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+<!--        &lt;!&ndash; Starter security &ndash;&gt;-->
+<!--        <dependency> &lt;!&ndash; funcinalidades basicas do spring &ndash;&gt;-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
 
-        <!-- Starter test -->
-        <dependency> <!-- funcinalidades basicas do spring -->
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
+<!--        &lt;!&ndash; Starter test &ndash;&gt;-->
+<!--        <dependency> &lt;!&ndash; funcinalidades basicas do spring &ndash;&gt;-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-test</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
-
     <build>
         <plugins>
             <plugin> <!-- Connecta o mavem ao spring, conecta o Maven ao Spring Boot, permitindo que você execute tarefas específicas relacionadas ao Spring Boot -->
